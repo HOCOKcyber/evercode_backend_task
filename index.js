@@ -1,3 +1,4 @@
 const log = require("./logger.js")
+const addSchedulerTask = require("./scheduler.js")
 
-log("Hello World!")
+addSchedulerTask("runnigTask", 10000, () => log("runnig"))
